@@ -1,4 +1,9 @@
 const sumAll = function(int1, int2) {
+  if (int1 < 0 || int2 < 0 || 
+      typeof int1 != typeof 1 || typeof int2 != typeof 1  ||
+      int1 % 1 != 0 || int2 % 1 != 0) {
+    return "ERROR";
+  }
   if (int1 > int2) {
     let swap = int1;
     int1 = int2;
